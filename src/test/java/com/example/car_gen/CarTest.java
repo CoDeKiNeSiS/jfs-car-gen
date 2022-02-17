@@ -4,17 +4,16 @@ import org.junit.Test;
 
 public class CarTest {
 
-    Honda civic = new Honda("Blue", 2003,140, true);
-
+    Honda civic = new Honda("Blue", 2003,140, false);
 
     @Test
     public void testAccelerateSpeed() {
-        Assert.assertEquals(5, civic.accelerateSpeed());
+        Assert.assertEquals(55, civic.accelerateSpeed());
     }
 
     @Test
     public void testDecelerateSpeed() {
-        Assert.assertEquals(0, civic.decelerateSpeed());
+        Assert.assertEquals(45, civic.decelerateSpeed());
     }
 
     @Test

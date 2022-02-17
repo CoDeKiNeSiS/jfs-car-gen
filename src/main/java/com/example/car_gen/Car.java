@@ -4,7 +4,7 @@ public class Car {
 
     private String color;
     private int year;
-    private int speed = 0;
+    private int speed;
     private int maxSpeed;
     private boolean isElectric;
 
@@ -12,6 +12,7 @@ public class Car {
         this.color = color;
         this.year = year;
         this.maxSpeed = maxSpeed;
+        this.speed = 50;
     }
 
     public String getColor() {return this.color;}
@@ -44,14 +45,13 @@ public class Car {
     }
 
     public boolean convertToElectric() {
-        if (isElectric == true) {
-            System.out.println("The car is already electric...boogy whoogy whoogy!");
+        if (isElectric) {
+            System.out.println("The car is already electric...boogey whoogey whoogey!");
         } else {
             isElectric = true;
         }
         return isElectric;
     }
-
 
 
 }
